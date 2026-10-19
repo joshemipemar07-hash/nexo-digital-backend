@@ -56,7 +56,7 @@ app.get('/', (req, res) => {
         <body>
             <h1>🚀 Backend Nexo Digital Activo</h1>
             <p>¡Qué haces aquí sospechoso! Esta es una API REST, no una página web 🤖</p>
-            <img src="https://i.imgur.com/Jvh11y8.gif" alt="Meme Programación">
+            <img src="https://tenor.com/es/view/el-pequeño-baile-de-jamal-taka-la-dentro-dance-cat-gato-gif-17260958323455438112" alt="Meme Programación">
         </body>
         </html>
     `);
