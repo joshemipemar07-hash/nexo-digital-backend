@@ -54,8 +54,8 @@ app.get('/', (req, res) => {
             </style>
         </head>
         <body>
-            <h1>🚀 Backend Nexo Digital Activo</h1>
-            <p>¡Qué haces aquí sospechoso! Esta es una API , no una página web </p>
+            <h1>Backend Nexo Digital Activado</h1>
+            <p>¡Qué haces aquí joven! Esta es una API , no una página web es un servidor, PONTE PILAS CRACK</p>
             <img src="https://share.google/m8zrpEcRgBINOtmAm" alt="Meme de gato">
         </body>
         </html>
