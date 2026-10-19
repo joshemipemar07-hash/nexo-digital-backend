@@ -21,9 +21,7 @@ mongoose.connect(MONGO_URI)
     process.exit(1);
   });
 
-// ==========================================
-// RUTA PRINCIPAL (PORTADA / MEME EN HTML)
-// ==========================================
+
 // Aquí es donde se pone la portada que aparece al entrar a la raíz de tu dominio en Vercel
 app.get('/', (req, res) => {
   res.send(`
@@ -58,8 +56,7 @@ app.get('/', (req, res) => {
         <body>
             <h1>🚀 Backend Nexo Digital Activo</h1>
             <p>¡Qué haces aquí sospechoso! Esta es una API REST, no una página web 🤖</p>
-            <!-- Puedes cambiar el enlace de esta imagen por cualquier otro GIF o imagen que prefieras -->
-            <img src="https://tenor.com/uJfxe42nKLI.gif" alt="Meme">
+            <img src="https://i.imgur.com/Jvh11y8.gif" alt="Meme Programación">
         </body>
         </html>
     `);
