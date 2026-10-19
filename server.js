@@ -55,8 +55,8 @@ app.get('/', (req, res) => {
         </head>
         <body>
             <h1>🚀 Backend Nexo Digital Activo</h1>
-            <p>¡Qué haces aquí sospechoso! Esta es una API REST, no una página web 🤖</p>
-            <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3IzbXZqMTh6Y3R5Mmd2cmc1OWQ2eTFubmV0aTFnbm85cmNmdHZkZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1tvI9sv3y0/giphy.gif" alt="Meme Programación">
+            <p>¡Qué haces aquí sospechoso! Esta es una API , no una página web </p>
+            <img src="https://share.google/m8zrpEcRgBINOtmAm" alt="Meme de gato">
         </body>
         </html>
     `);
