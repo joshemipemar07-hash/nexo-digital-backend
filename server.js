@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const productRoutes = require('./routes/product.routes.js');
 const authRoutes = require('./routes/auth.routes.js');
+const cartRoutes = require('./routes/cart.routes.js');
 
 const app = express();
 
@@ -65,6 +66,8 @@ app.get('/', (req, res) => {
 // Usar las rutas del MVC
 app.use('/api', productRoutes);
 app.use('/api', authRoutes);
+app.use('/api', cartRoutes);
+
 
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;
