@@ -64,7 +64,7 @@ class CartController {
         }
     }
 
-    // Actualizar cantidad directamente o eliminar (US10)
+    // Actualizar cantidad directamente o eliminar
     async updateItemQuantity(req, res) {
         try {
             const { username, productId, quantity } = req.body;
