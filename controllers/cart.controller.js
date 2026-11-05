@@ -1,3 +1,9 @@
+/**
+ * Controlador para la gestión de carritos de compras en la nube.
+ * Maneja la sincronización, actualización de cantidades, vaciado tras el pago
+ * y la consulta global de carritos (US12).
+ */
+
 const Cart = require('../models/cart.model.js');
 
 class CartController {
@@ -102,6 +108,19 @@ class CartController {
             res.json({ message: 'Carrito vaciado exitosamente' });
         } catch (error) {
             res.status(500).json({ error: 'Error al vaciar el carrito' });
+        }
+    }
+
+    /**
+     * US12: Obtener el histórico global de carritos de todos los usuarios registrados.
+     * Permite a los roles administrativos auditar y visualizar las compras activas de la plataforma.
+     */
+    async getAllCarts(req, res) {
+        try {
+            const allCarts = await Cart.find({});
+            res.status(200).json(allCarts);
+        } catch (error) {
+            res.status(500).json({ error: 'Error al obtener el histórico global de carritos', details: error.message });
         }
     }
 }
